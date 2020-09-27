@@ -1,0 +1,45 @@
+/* Estilo global para todo el sitio web*/
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Cabecera */
+header>div {
+    width: 100%;
+    display: inline-block;
+}
+header>div#mensaje p {
+    margin: auto;
+    float: left;
+}
+
+header>div#mensaje a.rrss {
+    display: block;
+    float: right;
+}
+
+header div#mensaje a.rrss img {
+    width: 30px;
+}
+header>hr {
+    margin: unset;
+}
+a.header.logo {
+    display: block;
+    float: left;
+}
+
+a.header.logo img {
+    border: 2px solid blue;
+    border-radius: 32%;
+    width: 100px;
+}
+
+div#cabecera p {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 43px 10px;
+}
+div#cabecera>div {
+    float: right;
+    margin: 43px 10px;
+}

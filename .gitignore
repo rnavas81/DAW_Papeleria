@@ -1,2 +1,4 @@
 #la carpeta capturas no es necesaria de subir
 caprutas/
+#Carpetas de vscode
+.vscode
