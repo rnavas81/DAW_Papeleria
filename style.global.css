@@ -43,3 +43,9 @@ div#cabecera>div {
     float: right;
     margin: 43px 10px;
 }
+div.items {
+
+}
+div.items div img {
+    width: 50px;
+}
