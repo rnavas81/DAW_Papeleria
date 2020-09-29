@@ -1,0 +1,25 @@
+/* Hoja de estilo para la página principal */
+
+div.items div img {
+  width: 50px;
+}
+article > div {
+  padding: 0px;
+  border-bottom: 1px solid;
+}
+
+article > div > p {
+  margin-left: 11px;
+  font-size: x-large;
+}
+
+.items {
+    display: block;
+    width: max-content;
+    margin: auto;
+}
+
+.item {
+  display: inline-block;
+  margin: auto 10px;
+}
