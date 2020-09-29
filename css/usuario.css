@@ -1,0 +1,44 @@
+/* Hoja de estilo para la página de usuario */
+
+article.usuario {
+  display: block;
+  width: 100%;
+}
+article>h2{
+    text-align: center;
+}
+article.usuario > div {
+  padding: 1%;
+  width: 47.9%;
+}
+article.usuario > div:first-child {
+  float: left;
+}
+article.usuario > div:last-child {
+  float: right;
+}
+div#usuarioAcceso {
+    display: block;
+    width: inherit;
+}
+article.usuario form {
+  width: min-content;
+  margin: auto;
+}
+form label {
+  margin-top: 10px;
+  display: block;
+}
+
+form input {
+  width: 300px;
+}
+
+form input[type="submit"] {
+  width: auto;
+  margin-top: 20px;
+  background: #247aad;
+  padding: 10px;
+  border: unset;
+  border-radius: 10px;
+}

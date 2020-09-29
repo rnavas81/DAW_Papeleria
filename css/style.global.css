@@ -85,7 +85,8 @@ a.header.logo {
 }
 
 a.header.logo img {
-  border: 2px solid blue;
+  border: 2px solid rgb(0, 162, 255);
+  background-color: rgb(126, 177, 223);
   border-radius: 32%;
   width: 100px;
 }
@@ -98,6 +99,10 @@ div#cabecera > div {
   float: right;
   margin: 43px 10px;
 }
+div#cabecera i {
+  margin-right: 10px;
+  color: whitesmoke;
+}
 /* Cuerpo */
 section {
   display: inline-block;
@@ -108,17 +113,6 @@ section {
 
 div.items div img {
   width: 50px;
-}
-article.usuario > div {
-  width: 50%;
-  float: left;
-}
-article.usuario {
-  display: block;
-  width: 100%;
-}
-article.usuario form {
-  width: min-content;
 }
 article.cesta > div#items {
   float: left;
