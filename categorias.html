@@ -54,7 +54,44 @@
       </ul>
     </nav>
     <section>
-      <article>
+      <article class="categorias">
+        <nav>
+          <fieldset>
+            <legend>Categorías</legend>
+            <ul>
+              <li><a href="categorias.html?tipo=mochilas">Mochilas</a></li>
+              <li><a href="categorias.html?tipo=tinta">Tinta</a></li>
+              <li><a href="categorias.html?tipo=papel">Papel</a></li>
+              <li><a href="categorias.html?tipo=almacenaje">Almacenaje</a></li>
+              <li><a href="categorias.html?tipo=cartuchos">Cartuchos</a></li>
+              <li><a href="categorias.html?tipo=otros">Otros...</a></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Filtros</legend>
+            <ul>
+              <li>Precio <input type="number" name="fPrecio" id="fPrecio"></li>
+              <li>Marca
+                <ul>
+                  <li><input type="checkbox" name="vans" id="vans"><label for="vans">Vans</label></li>
+                  <li><input type="checkbox" name="reebok" id="reebok"><label for="reebok">Reebok</label></li>
+                  <li><input type="checkbox" name="xiaomi" id="xiaomi"><label for="xiaomi">xiaomi</label></li>
+                </ul>
+              </li>
+              <li>Color
+                <input type="color" name="fColor" id="fColor">
+              </li>
+            </ul>
+          </fieldset>
+        </nav>
+        <div class="articulos">
+          <div class="articulo" onclick="window.location.href='item.html'">
+            <img src="recursos/mochila.jpeg" alt="">
+            <p>Mochila Vans</p>
+            <b>20€</b>
+          </div>
+        </div>
+        
       </article>
     </section>
     <footer>
