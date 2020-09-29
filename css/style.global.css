@@ -3,13 +3,38 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+html,
+body {
+  margin: unset;
+  padding: unset;
+}
 /* Cabecera */
+header {
+  background-color: rgb(144, 196, 255);
+}
 header > div {
   width: 100%;
   display: inline-block;
 }
+header > div#mensaje {
+  background-image: linear-gradient(
+    to right,
+    #6b97d1,
+    #849dce,
+    #98a4cb,
+    #a7acc7,
+    #b4b4c4,
+    #b4b4c4,
+    #b4b4c4,
+    #b4b4c4,
+    #a7acc7,
+    #98a4cb,
+    #849dce,
+    #6b97d1
+  );
+}
 header > div#mensaje p {
-  margin: auto;
+  margin: 8px 0 0 10px;
   float: left;
 }
 
@@ -24,9 +49,35 @@ header div#mensaje a.rrss img {
 header > hr {
   margin: unset;
 }
-section {
+/* Menú */
+body > nav {
+  /* border-top: 1px solid;
+  border-bottom: 1px solid; */
+  /* margin: 0; */
+  background-color: rgb(6, 51, 94);
+  color: aliceblue;
+  height: 50px;
+}
+body > nav ul {
+  padding-left: 0;
+  margin: unset;
+  padding: 16px 0;
+}
+body > nav ul li {
+  display: inline;
+  padding: 0 5px;
+}
+body > nav ul li a {
+  width: 120px;
+  font-family: Arial;
+  text-decoration: none;
   display: inline-block;
-  width: 100%;
+  color: rgb(219, 221, 223);
+}
+body > nav ul li a:hover {
+  text-decoration: underline;
+  color: rgb(251, 253, 255);
+  font-weight: bold;
 }
 a.header.logo {
   display: block;
@@ -38,7 +89,6 @@ a.header.logo img {
   border-radius: 32%;
   width: 100px;
 }
-
 div#cabecera p {
   display: inline-block;
   vertical-align: middle;
@@ -48,6 +98,13 @@ div#cabecera > div {
   float: right;
   margin: 43px 10px;
 }
+/* Cuerpo */
+section {
+  display: inline-block;
+  width: 100%;
+}
+/*
+
 
 div.items div img {
   width: 50px;
@@ -92,6 +149,7 @@ article.cesta > div#items input {
 article.cesta > div#items button {
   margin: auto 10px;
 }
+*/
 
 /* Footer */
 footer {
@@ -101,4 +159,30 @@ footer {
   left: 0px;
   width: 100%;
   background: #a8c7e2;
+  padding: 10px 0;
+  display: inline-block;
+}
+footer p.info {
+  width: 30%;
+  display: inline-block;
+}
+
+footer div.enlaces {
+  /* display: inline-block; */
+  float: right;
+}
+
+footer div.enlaces ul li {
+  font-variant: all-small-caps;
+  list-style: none;
+}
+
+footer ul li a {
+  color: black;
+  text-decoration: none;
+  min-width: 200px;
+}
+
+footer ul li a:hover {
+  font-weight: bold;
 }
