@@ -1,51 +1,106 @@
 /* Estilo global para todo el sitio web*/
 * {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 /* Cabecera */
-header>div {
-    width: 100%;
-    display: inline-block;
+header > div {
+  width: 100%;
+  display: inline-block;
 }
-header>div#mensaje p {
-    margin: auto;
-    float: left;
+header > div#mensaje p {
+  margin: auto;
+  float: left;
 }
 
-header>div#mensaje a.rrss {
-    display: block;
-    float: right;
+header > div#mensaje a.rrss {
+  display: block;
+  float: right;
 }
 
 header div#mensaje a.rrss img {
-    width: 30px;
+  width: 30px;
 }
-header>hr {
-    margin: unset;
+header > hr {
+  margin: unset;
+}
+section {
+  display: inline-block;
+  width: 100%;
 }
 a.header.logo {
-    display: block;
-    float: left;
+  display: block;
+  float: left;
 }
 
 a.header.logo img {
-    border: 2px solid blue;
-    border-radius: 32%;
-    width: 100px;
+  border: 2px solid blue;
+  border-radius: 32%;
+  width: 100px;
 }
 
 div#cabecera p {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 43px 10px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 43px 10px;
 }
-div#cabecera>div {
-    float: right;
-    margin: 43px 10px;
+div#cabecera > div {
+  float: right;
+  margin: 43px 10px;
 }
 div.items {
-
 }
+
 div.items div img {
-    width: 50px;
+  width: 50px;
+}
+article.usuario > div {
+  width: 50%;
+  float: left;
+}
+article.usuario {
+  display: block;
+  width: 100%;
+}
+article.usuario form {
+  width: min-content;
+}
+article.cesta > div#items {
+  float: left;
+  width: 70%;
+}
+article.cesta > div#cuenta {
+  float: right;
+  width: 25%;
+  border-left: 1px solid black;
+  padding: 0 10px;
+}
+article.cesta > div#items p {
+  float: left;
+}
+article.cesta div#items img {
+  width: 100px;
+  float: left;
+}
+article.cesta > div#items > div > div {
+  width: min-content;
+  float: right;
+  margin: auto 10px;
+}
+article.cesta > div#items input {
+  width: 100px;
+  text-align: right;
+}
+article.cesta > div#items button {
+  margin: auto 10px;
+}
+
+/* Footer */
+footer {
+  clear: both;
+  /* position: absolute; */
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background: #a8c7e2;
 }

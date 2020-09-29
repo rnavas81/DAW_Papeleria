@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Librería Plumín</title>
+    <title>Librería Plumín - Usuario</title>
     <link rel="shortcut icon" href="recursos/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.global.css" />
     <link rel="stylesheet" href="fontawesome/css/all.min.css" />
@@ -54,57 +54,26 @@
       </ul>
     </nav>
     <section>
-      <article>
-        <div id="ofertas">
-          <p>Ofertas</p>
-          <div class="items">
-            <div class="item">
-              <img src="recursos/lapiz.jpg" alt="" />
-              <p>Lapiz 50% Descuento</p>
-            </div>
-            <div class="item">
-              <img src="recursos/carpesano.jpg" alt="" />
-              <p>Carpesano Gorjus 10% Descuento</p>
-            </div>
-            <div class="item">
-              <img src="recursos/boligrafo.jpg" alt="" />
-              <p>Boligrafo 15% Descuento</p>
-            </div>
-          </div>
-        </div>
-        <div id="novedades">
-          <p>Novedades</p>
-          <div class="items">
-            <div class="item">
-              <img src="recursos/lapiz.jpg" alt="" />
-              <p>Lapiz 50% Descuento</p>
-            </div>
-            <div class="item">
-              <img src="recursos/carpesano.jpg" alt="" />
-              <p>Carpesano Gorjus 10% Descuento</p>
-            </div>
-            <div class="item">
-              <img src="recursos/boligrafo.jpg" alt="" />
-              <p>Boligrafo 15% Descuento</p>
-            </div>
-          </div>
-        </div>
-        <div id="destacados">
-          <p>Destacados</p>
-          <div class="items">
-            <div class="item">
-              <img src="recursos/lapiz.jpg" alt="" />
-              <p>Lapiz 50% Descuento</p>
-            </div>
-            <div class="item">
-              <img src="recursos/carpesano.jpg" alt="" />
-              <p>Carpesano Gorjus 10% Descuento</p>
-            </div>
-            <div class="item">
-              <img src="recursos/boligrafo.jpg" alt="" />
-              <p>Boligrafo 15% Descuento</p>
-            </div>
-          </div>
+      <article class="usuario">
+        <!-- Registro de usuario -->
+        <div>
+            <form action="principal.html">
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" id="nombre" />
+              <label for="apellidos">Apellidos</label>
+              <input type="text" name="apellidos" id="apellidos" />
+              <label for="email">Correo electronico</label>
+              <input type="email" name="email" id="email" />
+              <label for="pass">Contraseña</label>
+              <input type="password" name="pass" id="pass" />
+              <label for="pass2">Confirmación de contraseña</label>
+              <input type="password" name="pass2" id="pass2" />
+              <label for="factura">Dirección de facturación</label>
+              <input type="password" name="factura" id="factura" />
+              <label for="envio">Dirección de envío</label>
+              <input type="password" name="envio" id="envio" />
+              <input type="submit" value="Modificar" />
+            </form>
         </div>
       </article>
     </section>
