@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Librería Plumín - Mochila</title>
+    <link rel="shortcut icon" href="recursos/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.global.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Espacio para mensajes y redes sociales -->
+      <div id="mensaje">
+        <p>Semana del descuento en mochilas</p>
+        <a class="rrss" href="https://www.facebook.com/rorro.n.a"
+          ><img src="recursos/facebook.png" alt="Imagen facebook"
+        /></a>
+        <a class="rrss" href="https://twitter.com/Rodrig0_Navas"
+          ><img src="recursos/twitter.png" alt="Imagen twitter"
+        /></a>
+        <a class="rrss" href="https://www.instagram.com/rodrigo.navas.arriaga"
+          ><img src="recursos/instagram.png" alt="Imagen instagram"
+        /></a>
+      </div>
+      <hr />
+      <!-- Espacio para el logo, presentación, buscar, usuario y cesta -->
+      <div id="cabecera">
+        <a class="header logo" href="principal.html"
+          ><img
+            src="recursos/logo.png"
+            alt="Imagen Logo"
+            srcset="recursos/logo.png"
+        /></a>
+        <p>La librería de tu barrio</p>
+        <div>
+          <input type="search" name="buscar" id="buscar" />
+          <i class="fas fa-search"></i>
+          <a href="usuario.html"><i class="fas fa-user"></i></a>
+          <a href="cesta.html"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+      </div>
+      <hr />
+    </header>
+    <nav>
+      <!-- Menú de navegación por las categorías -->
+      <ul>
+        <li><a href="categorias.html?tipo=mochilas">Mochilas</a></li>
+        <li><a href="categorias.html?tipo=tinta">Tinta</a></li>
+        <li><a href="categorias.html?tipo=papel">Papel</a></li>
+        <li><a href="categorias.html?tipo=almacenaje">Almacenaje</a></li>
+        <li><a href="categorias.html?tipo=cartuchos">Cartuchos</a></li>
+        <li><a href="categorias.html?tipo=otros">Otros...</a></li>
+      </ul>
+    </nav>
+    <section>
+      <article class="item">
+        <div id="items">
+          <img src="recursos/mochila.jpeg" alt="" />
+          <div class="">
+            <h2>Mochila Vans roja</h2>
+            <h3>
+              Mochila de 10L. Impermeable, diseñada para el uso escolar. En
+              colores rojo, azul y verde.
+            </h3>
+          </div>
+          <div>
+            <label for="unidades">Unidades</label>
+            <input type="number" name="unidades" id="unidades" value="3" />
+            <button onclick="window.location.href='cesta.html'">Comprar</button>
+            <button>Agregar a cesta</button>
+          </div>
+          <div></div>
+          <div class="similares">
+            <div class="articulo" onclick="window.location.href='item.html'">
+              <img src="recursos/mochila.jpeg" alt="" />
+              <p>Mochila Vans</p>
+              <b>20€</b>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <footer>
+      <!-- Info de contacto y enlaces de interes en la aplicación -->
+      <p class="info">
+        Web desarrollada por ©rNavas Esta información esta restringida por la
+        protección de datos del desarrollador IFP Virgen de Gracia
+      </p>
+      <div class="enlaces">
+        <ul>
+          <li>
+            <a href="capturas/mapa de navegación.drawio">Mapa de navegación</a>
+          </li>
+          <li><a href="usuario.html">Crear usuario</a></li>
+          <li><a href="info.html">Información de la página</a></li>
+          <li>
+            <a href="https://cifpvirgendegracia.com/">IFP Virgen de Gracia</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
