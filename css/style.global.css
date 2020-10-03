@@ -1,4 +1,19 @@
 /* Estilo global para todo el sitio web*/
+:root {
+  --background-color:rgb(144, 196, 255);
+
+  --menu-color:rgb(6, 51, 94);
+  --menu-text-color:rgb(219, 221, 223);
+  --menu-text-color-hover:rgb(251, 253, 255);
+  --menu-logo-border:rgb(0, 162, 255);
+  --menu-logo-background:rgb(126, 177, 223);
+  --menu-icon:whitesmoke;
+
+  --button-background:#247aad;
+  --button-color:rgb(219, 221, 223);
+
+  --main-color:rgb(6, 51, 94);
+}
 * {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -10,7 +25,7 @@ body {
 }
 /* Cabecera */
 header {
-  background-color: rgb(144, 196, 255);
+  background-color: var(--background-color);
 }
 header > div {
   width: 100%;
@@ -53,8 +68,7 @@ header > hr {
 body > nav {
   position: sticky;
   top: 0;
-  background-color: rgb(6, 51, 94);
-  color: aliceblue;
+  background-color: var(--menu-color);
   height: 50px;
 }
 body > nav ul {
@@ -64,18 +78,18 @@ body > nav ul {
 }
 body > nav ul li {
   display: inline;
-  padding: 0 5px;
+  padding: 0 20px;
 }
 body > nav ul li a {
   width: 120px;
   font-family: Arial;
   text-decoration: none;
   display: inline-block;
-  color: rgb(219, 221, 223);
+  color: var(--menu-text-color);
 }
 body > nav ul li a:hover {
   text-decoration: underline;
-  color: rgb(251, 253, 255);
+  color: var(--menu-text-color-hover);
   font-weight: bold;
 }
 a.header.logo {
@@ -84,8 +98,8 @@ a.header.logo {
 }
 
 a.header.logo img {
-  border: 2px solid rgb(0, 162, 255);
-  background-color: rgb(126, 177, 223);
+  border: 2px solid var(--menu-logo-border);
+  background-color: var(--menu-logo-background);
   border-radius: 32%;
   width: 100px;
 }
@@ -100,7 +114,7 @@ div#cabecera > div {
 }
 div#cabecera i {
   margin-right: 10px;
-  color: whitesmoke;
+  color: var(--menu-icon);
 }
 div#cabecera>div>i {
   margin-right: 100px;
@@ -113,7 +127,8 @@ section {
 form input[type="submit"], button {
   width: auto;
   margin-top: 20px;
-  background: #247aad;
+  background: var(--button-background);
+  color: var(--button-color);
   padding: 10px;
   border: unset;
   border-radius: 10px;
@@ -232,4 +247,67 @@ article div.item div:nth-child(3) {
   width: 23%;
   padding: 1%;
   display: inline-block;
+}
+/** CSS CESTA **/
+div#items > div {
+  width: 100%;
+  display: block;
+}
+
+div#items div img {
+  margin: 1%;
+  padding: 1%;
+  float: left;
+  height: 200px;
+  width: 204px;
+  border: 1px solid black;
+}
+
+div#items p {
+  float: left;
+  margin-top: 100px;
+  width: 50%;
+}
+
+div#items div div {
+  float: left;
+  margin-top: 53px;
+  width: 15%;
+}
+div#items div div > * {
+  float: left;
+  width: 100%;
+}
+
+article.cesta {
+}
+
+div#items {
+  width: 75%;
+  float: left;
+}
+
+div#cuenta {
+  width: auto;
+  float: right;
+  padding: 50px 50px;
+}
+
+div#items  input {
+  width: 90px;
+}
+div#items button {
+  float: left;
+  margin-top: 90px;
+}
+form input[type="submit"]:active, button:active {
+  background: #1b384a;
+}
+
+form input[type="submit"]:focus, button:focus {
+  border: none;
+}
+
+div#items div div > input {
+  width: 100px;
 }

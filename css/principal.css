@@ -19,6 +19,7 @@ article > div > p {
 div.items > div {
   display: inline-block;
   margin: auto 10px;
+  cursor: pointer;
 }
 
 div.items div img {
