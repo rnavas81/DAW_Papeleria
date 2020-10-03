@@ -51,9 +51,8 @@ header > hr {
 }
 /* Menú */
 body > nav {
-  /* border-top: 1px solid;
-  border-bottom: 1px solid; */
-  /* margin: 0; */
+  position: sticky;
+  top: 0;
   background-color: rgb(6, 51, 94);
   color: aliceblue;
   height: 50px;
@@ -102,6 +101,9 @@ div#cabecera > div {
 div#cabecera i {
   margin-right: 10px;
   color: whitesmoke;
+}
+div#cabecera>div>i {
+  margin-right: 100px;
 }
 /* Cuerpo */
 section {
@@ -179,4 +181,63 @@ footer ul li a {
 
 footer ul li a:hover {
   font-weight: bold;
+}
+/** CSS para categorias **/
+article.categorias nav {
+    float: left;
+}
+article>nav ul {
+  padding: unset;
+  margin: unset;
+}
+
+article>nav fieldset {
+  margin: 35px 35px;
+}
+article.categorias nav ul li {
+    list-style: none;
+    margin: 18px 0px;
+}
+
+article.categorias nav ul li a {
+    text-decoration: none;
+    color: #636363;
+}
+
+article.categorias nav ul li a:hover {
+    font-weight: bold;
+    color: black;
+}
+article>nav ul li input[type=number] {
+  width: 53px;
+}
+article div.articulos {
+  width: auto;
+  margin: 40px 5px;
+}
+
+article div.articulos>div {
+  float: left;
+  margin: 20px 10px;
+  padding: 5px;
+  border: 1px solid #e2e2e2;
+  cursor: pointer;
+  min-width: 200px;
+  min-height: 255px;
+}
+
+article div.articulos img {
+  width: 160px;
+  margin: 10px auto;
+  display: block;
+}
+
+div.articulos p {
+  max-width: 200px;
+  padding: 0 10px;
+}
+
+div.articulos b {
+  float: right;
+  margin: 0 10px;
 }

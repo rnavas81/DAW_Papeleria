@@ -1,8 +1,5 @@
 /* Hoja de estilo para la página principal */
 
-div.items div img {
-  width: 50px;
-}
 article > div {
   padding: 0px;
   border-bottom: 1px solid;
@@ -19,7 +16,13 @@ article > div > p {
     margin: auto;
 }
 
-.item {
+div.items > div {
   display: inline-block;
   margin: auto 10px;
+}
+
+div.items div img {
+  width: 50px;
+  margin: auto;
+  display: block;
 }
