@@ -34,11 +34,4 @@ form input {
   width: 300px;
 }
 
-form input[type="submit"] {
-  width: auto;
-  margin-top: 20px;
-  background: #247aad;
-  padding: 10px;
-  border: unset;
-  border-radius: 10px;
-}
+

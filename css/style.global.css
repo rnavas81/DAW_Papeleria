@@ -110,42 +110,14 @@ section {
   display: inline-block;
   width: 100%;
 }
-/*
-
-
-div.items div img {
-  width: 50px;
+form input[type="submit"], button {
+  width: auto;
+  margin-top: 20px;
+  background: #247aad;
+  padding: 10px;
+  border: unset;
+  border-radius: 10px;
 }
-article.cesta > div#items {
-  float: left;
-  width: 70%;
-}
-article.cesta > div#cuenta {
-  float: right;
-  width: 25%;
-  border-left: 1px solid black;
-  padding: 0 10px;
-}
-article.cesta > div#items p {
-  float: left;
-}
-article.cesta div#items img {
-  width: 100px;
-  float: left;
-}
-article.cesta > div#items > div > div {
-  width: min-content;
-  float: right;
-  margin: auto 10px;
-}
-article.cesta > div#items input {
-  width: 100px;
-  text-align: right;
-}
-article.cesta > div#items button {
-  margin: auto 10px;
-}
-*/
 
 /* Footer */
 footer {
@@ -240,4 +212,24 @@ div.articulos p {
 div.articulos b {
   float: right;
   margin: 0 10px;
+}
+article div.item {
+  display: inline-block;
+  padding: 20px;
+}
+
+article div.item img {
+  width: 25%;
+  float: left;
+}
+
+article div.item div:nth-child(2) {
+  width: 48%;
+  float: left;
+  padding: 1%;
+}
+article div.item div:nth-child(3) {
+  width: 23%;
+  padding: 1%;
+  display: inline-block;
 }
